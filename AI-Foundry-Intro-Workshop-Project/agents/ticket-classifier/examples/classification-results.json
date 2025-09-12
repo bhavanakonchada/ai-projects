@@ -6,7 +6,7 @@
         "priority": "critical",
         "department": "technical_support", 
         "issue_type": "bug_report",
-        "confidence": 0.96,
+        "confidence": 0.98,
         "suggested_response_time": "Immediate",
         "routing_notes": "Payment processing system failure affecting revenue, escalate to senior technical team and notify management"
       }
@@ -17,7 +17,7 @@
         "priority": "low",
         "department": "technical_support",
         "issue_type": "feature_request", 
-        "confidence": 0.92,
+        "confidence": 0.85,
         "suggested_response_time": "3-5 business days",
         "routing_notes": "Slack integration feature request, forward to product team for roadmap consideration"
       }
@@ -28,8 +28,8 @@
         "priority": "medium",
         "department": "billing",
         "issue_type": "billing_inquiry",
-        "confidence": 0.89,
-        "suggested_response_time": "Next business day",
+        "confidence": 0.95,
+        "suggested_response_time": "Same day",
         "routing_notes": "Unrecognized charge inquiry, premium customer, review account billing history"
       }
     },
@@ -135,8 +135,8 @@
     "average_confidence": 0.90,
     "response_time_distribution": {
       "immediate": 1,
-      "same_day": 2,
-      "next_business_day": 5,
+      "same_day": 3,
+      "next_business_day": 4,
       "3-5_business_days": 2
     }
   }
