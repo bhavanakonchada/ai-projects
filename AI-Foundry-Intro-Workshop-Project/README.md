@@ -2,6 +2,9 @@
 
 A multi-agent AI system built for Azure AI Foundry that handles customer support tickets through intelligent agent orchestration. The system processes customer inquiries through specialized agents that classify, research, and generate professional responses.
 
+<img width="771" height="648" alt="agent-orchestration-1" src="https://github.com/user-attachments/assets/151ad398-b659-4dbe-8b0e-6ba75daeac22" />
+
+
 ## 🏗️ Architecture Overview
 
 ```
