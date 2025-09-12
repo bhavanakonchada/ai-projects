@@ -1,0 +1,124 @@
+{
+  "examples": [
+    {
+      "input": {
+        "message": "Our entire system is down! None of our customers can access the service and we're losing money every minute this continues. This started about 30 minutes ago and affects all users.",
+        "customer_id": "enterprise_001",
+        "channel": "phone"
+      },
+      "output": {
+        "priority": "critical",
+        "department": "technical_support",
+        "issue_type": "bug_report",
+        "confidence": 0.98,
+        "suggested_response_time": "Immediate",
+        "routing_notes": "System-wide outage affecting all users, business impact, escalate to senior technical team immediately"
+      }
+    },
+    {
+      "input": {
+        "message": "Hi, I was charged twice for my subscription this month. Can you please help me get a refund for the duplicate charge? My account is premium@company.com",
+        "customer_id": "premium_042",
+        "channel": "email"
+      },
+      "output": {
+        "priority": "high",
+        "department": "billing",
+        "issue_type": "billing_inquiry",
+        "confidence": 0.95,
+        "suggested_response_time": "Same day",
+        "routing_notes": "Duplicate billing charge reported, requires refund processing, premium customer"
+      }
+    },
+    {
+      "input": {
+        "message": "I'm interested in upgrading to your enterprise plan. Could someone from sales contact me to discuss pricing and features? We have about 500 users.",
+        "customer_id": "prospect_156",
+        "channel": "chat"
+      },
+      "output": {
+        "priority": "medium",
+        "department": "sales",
+        "issue_type": "general_question",
+        "confidence": 0.92,
+        "suggested_response_time": "Next business day",
+        "routing_notes": "Enterprise upgrade inquiry, 500 users, high-value prospect, assign to enterprise sales rep"
+      }
+    },
+    {
+      "input": {
+        "message": "When I click the export button, I get an error message that says 'Export failed: timeout'. This happens every time I try to export more than 1000 records.",
+        "customer_id": "user_789",
+        "channel": "email"
+      },
+      "output": {
+        "priority": "medium",
+        "department": "technical_support",
+        "issue_type": "bug_report",
+        "confidence": 0.90,
+        "suggested_response_time": "Next business day",
+        "routing_notes": "Export functionality bug with large datasets, reproducible issue, may need product team involvement"
+      }
+    },
+    {
+      "input": {
+        "message": "I can't log into my account. I've tried resetting my password but I'm not getting the reset email. Please help!",
+        "customer_id": "user_234",
+        "channel": "chat"
+      },
+      "output": {
+        "priority": "high",
+        "department": "technical_support",
+        "issue_type": "account_issue",
+        "confidence": 0.88,
+        "suggested_response_time": "Same day",
+        "routing_notes": "Login issue with password reset failure, check email delivery and account status"
+      }
+    },
+    {
+      "input": {
+        "message": "Could you add a dark mode to the application? It would be great for users who work late hours.",
+        "customer_id": "user_567",
+        "channel": "email"
+      },
+      "output": {
+        "priority": "low",
+        "department": "technical_support",
+        "issue_type": "feature_request",
+        "confidence": 0.85,
+        "suggested_response_time": "3-5 business days",
+        "routing_notes": "Dark mode feature request, forward to product team for roadmap consideration"
+      }
+    },
+    {
+      "input": {
+        "message": "How do I change my notification settings? I can't find the option in my account dashboard.",
+        "customer_id": "user_345",
+        "channel": "chat"
+      },
+      "output": {
+        "priority": "low",
+        "department": "general",
+        "issue_type": "general_question",
+        "confidence": 0.87,
+        "suggested_response_time": "3-5 business days",
+        "routing_notes": "How-to question about notification settings, provide documentation link or quick walkthrough"
+      }
+    },
+    {
+      "input": {
+        "message": "We're having performance issues with the API. Response times are very slow, sometimes taking 10+ seconds. This is affecting our production application.",
+        "customer_id": "api_user_012",
+        "channel": "email"
+      },
+      "output": {
+        "priority": "high",
+        "department": "technical_support",
+        "issue_type": "bug_report",
+        "confidence": 0.93,
+        "suggested_response_time": "Same day",
+        "routing_notes": "API performance degradation affecting production, escalate to API team for investigation"
+      }
+    }
+  ]
+}

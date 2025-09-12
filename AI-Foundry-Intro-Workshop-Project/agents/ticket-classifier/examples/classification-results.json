@@ -1,0 +1,143 @@
+{
+  "classification_results": [
+    {
+      "ticket_id": "ticket_001",
+      "classification": {
+        "priority": "critical",
+        "department": "technical_support", 
+        "issue_type": "bug_report",
+        "confidence": 0.96,
+        "suggested_response_time": "Immediate",
+        "routing_notes": "Payment processing system failure affecting revenue, escalate to senior technical team and notify management"
+      }
+    },
+    {
+      "ticket_id": "ticket_002",
+      "classification": {
+        "priority": "low",
+        "department": "technical_support",
+        "issue_type": "feature_request", 
+        "confidence": 0.92,
+        "suggested_response_time": "3-5 business days",
+        "routing_notes": "Slack integration feature request, forward to product team for roadmap consideration"
+      }
+    },
+    {
+      "ticket_id": "ticket_003", 
+      "classification": {
+        "priority": "medium",
+        "department": "billing",
+        "issue_type": "billing_inquiry",
+        "confidence": 0.89,
+        "suggested_response_time": "Next business day",
+        "routing_notes": "Unrecognized charge inquiry, premium customer, review account billing history"
+      }
+    },
+    {
+      "ticket_id": "ticket_004",
+      "classification": {
+        "priority": "medium",
+        "department": "technical_support",
+        "issue_type": "bug_report",
+        "confidence": 0.94,
+        "suggested_response_time": "Next business day", 
+        "routing_notes": "Mobile app crash on photo upload, iOS specific, needs mobile development team review"
+      }
+    },
+    {
+      "ticket_id": "ticket_005",
+      "classification": {
+        "priority": "high",
+        "department": "technical_support",
+        "issue_type": "account_issue",
+        "confidence": 0.88,
+        "suggested_response_time": "Same day",
+        "routing_notes": "Password reset failure, user locked out, verify email delivery and account status"
+      }
+    },
+    {
+      "ticket_id": "ticket_006",
+      "classification": {
+        "priority": "medium",
+        "department": "general",
+        "issue_type": "general_question",
+        "confidence": 0.85,
+        "suggested_response_time": "Next business day",
+        "routing_notes": "Compliance audit request, enterprise customer, provide official documentation and legal review"
+      }
+    },
+    {
+      "ticket_id": "ticket_007",
+      "classification": {
+        "priority": "medium", 
+        "department": "sales",
+        "issue_type": "general_question",
+        "confidence": 0.90,
+        "suggested_response_time": "Next business day",
+        "routing_notes": "Plan comparison inquiry with upgrade interest, assign to sales rep for consultation"
+      }
+    },
+    {
+      "ticket_id": "ticket_008",
+      "classification": {
+        "priority": "medium",
+        "department": "technical_support",
+        "issue_type": "bug_report",
+        "confidence": 0.82,
+        "suggested_response_time": "Next business day",
+        "routing_notes": "Performance issue reported, check system status and recent deployments, premium customer"
+      }
+    },
+    {
+      "ticket_id": "ticket_009",
+      "classification": {
+        "priority": "high",
+        "department": "technical_support", 
+        "issue_type": "account_issue",
+        "confidence": 0.95,
+        "suggested_response_time": "Same day",
+        "routing_notes": "Security concern - unauthorized access alert, investigate immediately and secure account"
+      }
+    },
+    {
+      "ticket_id": "ticket_010",
+      "classification": {
+        "priority": "low",
+        "department": "general",
+        "issue_type": "general_question",
+        "confidence": 0.86,
+        "suggested_response_time": "3-5 business days", 
+        "routing_notes": "How-to question about data export, provide documentation link or quick tutorial"
+      }
+    }
+  ],
+  "classification_summary": {
+    "total_tickets": 10,
+    "by_priority": {
+      "critical": 1,
+      "high": 2, 
+      "medium": 5,
+      "low": 2
+    },
+    "by_department": {
+      "technical_support": 6,
+      "billing": 1,
+      "sales": 1,
+      "general": 2
+    },
+    "by_issue_type": {
+      "bug_report": 4,
+      "feature_request": 1,
+      "billing_inquiry": 1,
+      "account_issue": 2,
+      "general_question": 2
+    },
+    "average_confidence": 0.90,
+    "response_time_distribution": {
+      "immediate": 1,
+      "same_day": 2,
+      "next_business_day": 5,
+      "3-5_business_days": 2
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "sample_tickets": [
+    {
+      "id": "ticket_001",
+      "message": "Our payment processing is completely broken. Customers can't complete purchases and we're losing sales. This started 2 hours ago.",
+      "customer_id": "ecommerce_001",
+      "timestamp": "2024-01-15T14:30:00Z",
+      "channel": "phone",
+      "customer_type": "enterprise"
+    },
+    {
+      "id": "ticket_002", 
+      "message": "I'd like to request a new feature - can you add integration with Slack notifications?",
+      "customer_id": "user_102",
+      "timestamp": "2024-01-15T09:15:00Z",
+      "channel": "email",
+      "customer_type": "standard"
+    },
+    {
+      "id": "ticket_003",
+      "message": "My invoice shows a charge I don't recognize. Can you help me understand what this $50 fee is for?",
+      "customer_id": "user_203", 
+      "timestamp": "2024-01-15T11:22:00Z",
+      "channel": "chat",
+      "customer_type": "premium"
+    },
+    {
+      "id": "ticket_004",
+      "message": "The mobile app crashes every time I try to upload a photo. I'm using iPhone 15 with iOS 17.2.",
+      "customer_id": "mobile_user_045",
+      "timestamp": "2024-01-15T16:45:00Z", 
+      "channel": "email",
+      "customer_type": "standard"
+    },
+    {
+      "id": "ticket_005",
+      "message": "I forgot my password and the reset link isn't working. Can someone help me regain access to my account?",
+      "customer_id": "user_567",
+      "timestamp": "2024-01-15T13:10:00Z",
+      "channel": "chat",
+      "customer_type": "standard"
+    },
+    {
+      "id": "ticket_006",
+      "message": "What are your data retention policies? I need this information for our compliance audit.",
+      "customer_id": "enterprise_compliance_001",
+      "timestamp": "2024-01-15T10:30:00Z",
+      "channel": "email", 
+      "customer_type": "enterprise"
+    },
+    {
+      "id": "ticket_007",
+      "message": "Can you explain the difference between your pro and enterprise plans? We're considering upgrading.",
+      "customer_id": "growth_company_001",
+      "timestamp": "2024-01-15T15:20:00Z",
+      "channel": "phone",
+      "customer_type": "standard"
+    },
+    {
+      "id": "ticket_008",
+      "message": "The dashboard is loading very slowly today. Is there a system issue or maintenance happening?",
+      "customer_id": "daily_user_089",
+      "timestamp": "2024-01-15T12:05:00Z",
+      "channel": "chat",
+      "customer_type": "premium"
+    },
+    {
+      "id": "ticket_009",
+      "message": "Security alert: I received an email saying my account was accessed from a suspicious location. I didn't authorize this.",
+      "customer_id": "security_conscious_user_012",
+      "timestamp": "2024-01-15T18:30:00Z",
+      "channel": "email",
+      "customer_type": "premium"
+    },
+    {
+      "id": "ticket_010",
+      "message": "How do I export my data? I can't find the export option anywhere in the interface.",
+      "customer_id": "user_334",
+      "timestamp": "2024-01-15T14:15:00Z",
+      "channel": "chat",
+      "customer_type": "standard"
+    }
+  ]
+}

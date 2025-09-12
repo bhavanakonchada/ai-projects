@@ -1,0 +1,95 @@
+apiVersion: ai.azure.com/v1alpha1
+kind: Agent
+metadata:
+  name: ticket-classifier-agent
+  namespace: ai-foundry-workshop
+  labels:
+    app: customer-support
+    component: classifier
+    version: v1.0.0
+spec:
+  displayName: "Ticket Classifier Agent"
+  description: "Analyzes and classifies customer service tickets for proper routing"
+  
+  model:
+    name: "gpt-4o"
+    apiVersion: "2024-02-15-preview"
+    temperature: 0.1
+    maxTokens: 1000
+    topP: 0.9
+    
+  instructions:
+    systemPromptReference: "system-prompt"
+    examplesReference: "classification-examples"
+    
+  inputSchema:
+    $ref: "#/components/schemas/TicketInput"
+    
+  outputSchema:
+    $ref: "#/components/schemas/ClassificationOutput"
+    
+  resources:
+    requests:
+      cpu: "100m"
+      memory: "256Mi"
+    limits:
+      cpu: "500m"
+      memory: "512Mi"
+      
+  autoscaling:
+    minReplicas: 1
+    maxReplicas: 10
+    targetUtilization: 70
+    
+  monitoring:
+    enableMetrics: true
+    enableLogging: true
+    logLevel: "info"
+    
+  networking:
+    allowedConnections:
+      - orchestrator-agent
+      - monitoring-service
+    
+components:
+  schemas:
+    TicketInput:
+      type: object
+      properties:
+        message:
+          type: string
+          description: "Customer message to classify"
+        customer_id:
+          type: string
+          description: "Customer identifier"
+        channel:
+          type: string
+          description: "Communication channel"
+      required:
+        - message
+        
+    ClassificationOutput:
+      type: object
+      properties:
+        priority:
+          type: string
+          enum: [critical, high, medium, low]
+        department:
+          type: string
+          enum: [technical_support, billing, sales, general]
+        issue_type:
+          type: string
+          enum: [bug_report, feature_request, account_issue, billing_inquiry, general_question]
+        confidence:
+          type: number
+          minimum: 0
+          maximum: 1
+        suggested_response_time:
+          type: string
+        routing_notes:
+          type: string
+      required:
+        - priority
+        - department
+        - issue_type
+        - confidence

@@ -1,0 +1,97 @@
+{
+  "name": "ticket-classifier-agent",
+  "description": "Customer service ticket classifier for routing and prioritization",
+  "version": "1.0.0",
+  "agent_type": "classification",
+  "model_settings": {
+    "model": "gpt-4o",
+    "temperature": 0.1,
+    "max_tokens": 1000,
+    "top_p": 0.9
+  },
+  "instructions": {
+    "system_prompt_file": "../prompts/system-prompt.txt",
+    "examples_file": "../prompts/examples.json"
+  },
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "description": "The customer message or ticket content to classify"
+      },
+      "customer_id": {
+        "type": "string",
+        "description": "Unique identifier for the customer (optional)"
+      },
+      "timestamp": {
+        "type": "string",
+        "description": "When the ticket was submitted (optional)"
+      },
+      "channel": {
+        "type": "string",
+        "description": "Communication channel (email, chat, phone, etc.)"
+      }
+    },
+    "required": ["message"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "priority": {
+        "type": "string",
+        "enum": ["critical", "high", "medium", "low"],
+        "description": "Priority level of the ticket"
+      },
+      "department": {
+        "type": "string",
+        "enum": ["technical_support", "billing", "sales", "general"],
+        "description": "Department that should handle the ticket"
+      },
+      "issue_type": {
+        "type": "string",
+        "enum": ["bug_report", "feature_request", "account_issue", "billing_inquiry", "general_question"],
+        "description": "Type of issue or request"
+      },
+      "confidence": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "description": "Confidence score for the classification"
+      },
+      "suggested_response_time": {
+        "type": "string",
+        "description": "Recommended response timeframe"
+      },
+      "routing_notes": {
+        "type": "string",
+        "description": "Additional context for human agents"
+      }
+    },
+    "required": ["priority", "department", "issue_type", "confidence"]
+  },
+  "capabilities": [
+    "text_classification",
+    "priority_assessment",
+    "routing_recommendation",
+    "urgency_detection"
+  ],
+  "tools": [],
+  "conversation_starters": [
+    "Classify this customer message for routing",
+    "Analyze ticket priority and department",
+    "Help route this support request"
+  ],
+  "settings": {
+    "enable_conversation_history": false,
+    "max_conversation_turns": 1,
+    "response_format": "json",
+    "enable_function_calling": false
+  },
+  "metadata": {
+    "created_by": "AI Workshop Team",
+    "use_case": "Customer Support Automation",
+    "integration_type": "orchestrator_agent",
+    "tags": ["customer_service", "classification", "routing", "support"]
+  }
+}
