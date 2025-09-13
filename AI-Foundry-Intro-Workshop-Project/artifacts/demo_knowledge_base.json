@@ -1,0 +1,107 @@
+{
+  "knowledge_base": [
+    {
+      "id": "KB001",
+      "title": "Password Reset and Account Recovery",
+      "category": "Account Access",
+      "content": "Step-by-step password reset process: 1. Visit the login page at app.company.com/login 2. Click 'Forgot Password' link below the login form 3. Enter your registered email address 4. Check your email inbox (and spam folder) for reset instructions 5. Click the reset link within 24 hours 6. Create a new password (minimum 8 characters, include numbers and symbols) 7. Log in with your new password. If you don't receive the email within 10 minutes, check that you're using the correct email address associated with your account.",
+      "tags": ["password", "reset", "login", "account", "recovery", "forgot"],
+      "solution_type": "step-by-step",
+      "estimated_time": "5 minutes"
+    },
+    {
+      "id": "KB002", 
+      "title": "Mobile App Crashing Issues",
+      "category": "Technical Issue",
+      "content": "Mobile app troubleshooting for crashes: 1. Force close the app completely 2. Restart your mobile device 3. Update the app to the latest version from App Store/Google Play 4. Clear app cache: iOS - Offload and reinstall app, Android - Go to Settings > Apps > [App Name] > Storage > Clear Cache 5. Ensure you have at least 1GB free storage space 6. Check if your device OS version is supported (iOS 13+ or Android 8+) 7. If issues persist, uninstall and reinstall the app. Note: File upload limit is 100MB for Basic plans, 1GB for Premium plans.",
+      "tags": ["mobile", "app", "crash", "iOS", "android", "upload", "storage"],
+      "solution_type": "troubleshooting",
+      "estimated_time": "10 minutes"
+    },
+    {
+      "id": "KB003",
+      "title": "Billing and Payment Issues",
+      "category": "Billing", 
+      "content": "Common billing problems and solutions: Payment Failed - Check your payment method is valid and has sufficient funds, update expired credit cards in Account Settings > Billing. Duplicate Charges - Contact billing@company.com with transaction IDs, refunds processed in 3-5 business days. Subscription Changes - Upgrades take effect immediately, downgrades at next billing cycle. Refund Policy - 30-day money-back guarantee for new subscriptions, prorated refunds for downgrades. Invoice Questions - Access invoices in Account Settings > Billing History, enterprise customers contact billing team for custom invoicing.",
+      "tags": ["billing", "payment", "refund", "subscription", "invoice", "credit card"],
+      "solution_type": "policy",
+      "estimated_time": "immediate"
+    },
+    {
+      "id": "KB004",
+      "title": "System Outage Emergency Procedures",
+      "category": "Technical Issue",
+      "content": "Critical system outage response: 1. Immediately escalate to Level 3 technical support 2. Check system status at status.company.com 3. For healthcare/emergency services accounts, contact emergency hotline at 1-800-EMERGENCY 4. Create priority incident ticket with full impact description 5. Notify on-call engineering team 6. Provide regular updates every 30 minutes until resolved 7. Post-incident review and customer communication required. Healthcare and financial services customers receive automatic priority handling and dedicated support during outages.",
+      "tags": ["outage", "emergency", "critical", "system", "down", "healthcare", "priority"],
+      "solution_type": "escalation",
+      "estimated_time": "immediate"
+    },
+    {
+      "id": "KB005",
+      "title": "Product Plans and Upgrade Information",
+      "category": "Product Inquiry",
+      "content": "Product tier comparison and upgrade options: Basic Plan ($9/month) - Core features, 5GB storage, email support. Premium Plan ($29/month) - Advanced features, 50GB storage, priority chat support, API access, advanced analytics. Enterprise Plan (Custom pricing) - Unlimited storage, dedicated account manager, SLA guarantee, custom integrations, phone support. Upgrade Process: Go to Account Settings > Subscription > Change Plan, changes take effect immediately with prorated billing. Volume discounts available for 100+ users. Educational discounts: 50% off for verified students and educators.",
+      "tags": ["plans", "pricing", "upgrade", "premium", "enterprise", "features", "comparison"],
+      "solution_type": "information",
+      "estimated_time": "immediate"
+    },
+    {
+      "id": "KB006",
+      "title": "Data Export and Download Instructions",
+      "category": "Product Inquiry",
+      "content": "How to export your data: 1. Log into your account and go to Settings > Data Export 2. Select export format: CSV, JSON, or PDF 3. Choose date range for data to export 4. Select specific data types: messages, files, analytics, user data 5. Click 'Generate Export' - large exports may take up to 10 minutes 6. Download link will be sent to your email address 7. Export files are available for 7 days before automatic deletion. For enterprise customers: Bulk export API available, contact support for documentation. GDPR compliance: Complete data deletion available upon request.",
+      "tags": ["export", "download", "data", "CSV", "JSON", "GDPR", "backup"],
+      "solution_type": "step-by-step",
+      "estimated_time": "10 minutes"
+    },
+    {
+      "id": "KB007",
+      "title": "API Integration and Developer Support",
+      "category": "Technical Issue",
+      "content": "API integration help: 1. Get your API key from Developer Settings > API Keys 2. Review API documentation at docs.company.com/api 3. Rate limits: 1000 requests/hour for Premium, 10000/hour for Enterprise 4. Authentication: Use Bearer token in Authorization header 5. Common errors: 401 (invalid key), 429 (rate limit), 500 (server error) 6. SDKs available: Python, JavaScript, PHP, Ruby 7. Webhook support for real-time updates 8. Sandbox environment: api-sandbox.company.com for testing. Developer support: developer@company.com or #developers Slack channel.",
+      "tags": ["API", "integration", "developer", "authentication", "rate limit", "SDK", "webhook"],
+      "solution_type": "technical",
+      "estimated_time": "30 minutes"
+    },
+    {
+      "id": "KB008",
+      "title": "Security and Privacy Settings",
+      "category": "Account Access",
+      "content": "Account security management: 1. Enable Two-Factor Authentication in Security Settings 2. Review active sessions and revoke suspicious logins 3. Set up login alerts for new device notifications 4. Update security questions and backup email 5. Privacy controls: manage data sharing preferences, marketing communications opt-out 6. Account deletion: 30-day grace period with full data recovery option 7. Suspicious activity: immediately change password and contact security@company.com. Enterprise features: SSO integration, SAML authentication, audit logs, compliance reporting available.",
+      "tags": ["security", "privacy", "2FA", "authentication", "SSO", "SAML", "audit"],
+      "solution_type": "configuration",
+      "estimated_time": "15 minutes"
+    },
+    {
+      "id": "KB009",
+      "title": "File Upload and Storage Limits",
+      "category": "Technical Issue", 
+      "content": "File upload guidelines and troubleshooting: Storage limits - Basic: 5GB total, Premium: 50GB, Enterprise: unlimited. File size limits - Basic: 100MB per file, Premium: 1GB per file, Enterprise: 5GB per file. Supported formats: Documents (PDF, DOC, XLS, PPT), Images (JPG, PNG, GIF, SVG), Archives (ZIP, RAR), Video (MP4, AVI - Premium+ only). Upload issues: Check file size and format, ensure stable internet connection, try uploading smaller batches, clear browser cache. Failed uploads: Files are automatically retried 3 times, check upload queue in bottom right corner.",
+      "tags": ["upload", "file", "storage", "limit", "format", "size", "quota"],
+      "solution_type": "reference",
+      "estimated_time": "5 minutes"
+    },
+    {
+      "id": "KB010",
+      "title": "Account Deletion and Data Retention",
+      "category": "Account Access",
+      "content": "Account closure and data handling: 1. Go to Account Settings > Account Management > Delete Account 2. Download any data you want to keep before deletion 3. Account enters 30-day grace period - can be restored by contacting support 4. After 30 days, all data is permanently deleted and cannot be recovered 5. Active subscriptions are cancelled and prorated refunds issued 6. Enterprise accounts require admin approval for deletion 7. GDPR right to be forgotten: contact privacy@company.com for immediate data deletion. Retention policy: Deleted data is purged from backups within 90 days per compliance requirements.",
+      "tags": ["delete", "account", "closure", "retention", "GDPR", "privacy", "data"],
+      "solution_type": "policy",
+      "estimated_time": "immediate"
+    }
+  ],
+  "categories": {
+    "Technical Issue": ["KB002", "KB004", "KB007", "KB009"],
+    "Account Access": ["KB001", "KB008", "KB010"], 
+    "Billing": ["KB003"],
+    "Product Inquiry": ["KB005", "KB006"]
+  },
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2025-09-12",
+    "total_articles": 10,
+    "languages": ["en"],
+    "content_type": "customer_support"
+  }
+}
